@@ -1,17 +1,23 @@
 //Gioco dei dadi
 // Generare un numero random da 1  a 6, sia per il giocatore sia per il computer
 // Stabilire il vincitore, in base a chi fa il punteggio più alto.
+buttonLancia = document.getElementById('lancia')
 
-var playerUno = Math.floor(Math.random() * 6) + 1;
-var playerDue = Math.floor(Math.random() * 6) + 1;
-console.log(playerUno);
-console.log(playerDue);
+buttonLancia.addEventListener('click',
+  function() {
 
-if (playerUno > playerDue) {
-  console.log('You Win!');
+  var playerUno = Math.floor(Math.random() * 6) + 1;
+  alert('Tu giochi il n° ' + playerUno);
+  var playerDue = Math.floor(Math.random() * 6) + 1;
+  alert('Il computer gioca il n° ' + playerDue);
 
-} else if (playerUno < playerDue) {
-  console.log('you Lose!');
-} else {
-  console.log('Draw!');
+  if (playerUno > playerDue) {
+  alert('You Win!');
+
+  } else if (playerUno < playerDue) {
+  alert('you Lose!');
+  } else {
+  alert('Draw!');
+  }
 }
+);
