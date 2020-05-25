@@ -21,8 +21,11 @@ h1 {
   color: pink;
   text-align: center;
   margin-top: 40px;
+  text-shadow: 1px 1px 1px #f05050;
 }
-
+.dado:hover img {
+  cursor: pointer;
+}
 
 .dado {
   display: flex;
